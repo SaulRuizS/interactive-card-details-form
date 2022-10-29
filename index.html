@@ -8,44 +8,73 @@
   
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles/index.css">
+
 </head>
 <body>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+  <section class="cards-section">
+    <img src="./images/bg-main-mobile.png" alt="background-img" class="cards-section__background">
+    <section class="cards-section__cards">
+      <div class="back">
+        <img src="./images/bg-card-back.png" alt="card-back">
+        <section class="back__data">
+          <p class="back__code">000</p>
+        </section>
+      </div>
+      <div class="front">
+        <img src="./images/bg-card-front.png" alt="card-front">
+        <section class="front__data">
+          <p class="front__card-number">
+            <span>0000</span><span>0000</span><span>0000</span><span>0000</span>
+          </p>
+          <p class="front__name">Jane Applessed</p>
+          <p class="front__exp-date"><span>00</span>/<span>00</span></p>
+        </section>
+      </div>
+    </section>
+  </section>
+  
+  <section class="form-section">
+    <form action="">
+      <label for="cardholder-name">Cardholder Name</label>
+      <input
+        type="text"
+        name="cardholder-name"
+        class="text-input large"
+        placeholder="e.g. Jane Applessed"
+      >
 
-  000
+      <label for="card-number">Card Number</label>
+      <input
+        type="text"
+        name="card-number"
+        class="text-input large"
+        placeholder="e.g. 1234 5678 9123 0000"
+      >
 
-  Cardholder Name
-  e.g. Jane Appleseed
+      <label for="month year">Exp. Date (MM/YY)</label>
+      <input type="text" name="month" class="text-input small" placeholder="MM">
+      <input type="text" name="year" class="text-input small" placeholder="YY">
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+      <label for="cvc">cvc</label>
+      <input type="text" name="cvc" class="text-input medium" placeholder="e.g. 123">
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+      <button type="submit" class="confirm-btn">Confirm</button>
+    </form>
+  </section>
 
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
+  <section class="data-added">
+    <div class="check-mark"></div>
+    <p class="thanks">Thank You</p>
+    <p class="details-message">We've added your card details</p>
+    <button type="submit" class="continue-btn">Continue</button>
+  </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
