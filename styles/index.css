@@ -119,5 +119,69 @@ body {
 }
 
 .form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 88px;
+    /* background-color: aqua; */
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 330px;
+}
+
+.text-input {
+    height: 44px;
+    margin-bottom: 18px;
+    padding-left: 16px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--light-grayish-violet);
+}
+
+.text-input.large {
+    width: 100%;
+}
+
+.text-input.medium {
+    width: 50%;
+}
+
+.text-input.small {
+    width: 20%;
+}
+
+.text-input::placeholder {
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 1px;
+    color: var(--light-grayish-violet);
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--very-dark-violet);
+}
+
+button {
+    height: 48px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: var(--white);
+    background-color: var(--very-dark-violet);
+}
+
+.data-added {
+    display: none;
 }
