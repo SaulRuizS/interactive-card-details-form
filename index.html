@@ -59,12 +59,22 @@
         placeholder="e.g. 1234 5678 9123 0000"
       >
 
-      <label for="month year">Exp. Date (MM/YY)</label>
-      <input type="text" name="month" class="text-input small" placeholder="MM">
-      <input type="text" name="year" class="text-input small" placeholder="YY">
+      <div class="card-end">
+        <div class="card-end__exp-date">
+          <label for="month year" class="exp-date__label">Exp. Date (MM/YY)</label>
+          <div class="exp-date__inputs">
+            <input type="text" name="month" class="text-input small" placeholder="MM">
+            <input type="text" name="year" class="text-input small" placeholder="YY">
+          </div>
+        </div>
 
-      <label for="cvc">cvc</label>
-      <input type="text" name="cvc" class="text-input medium" placeholder="e.g. 123">
+        <div class="card-end__cvc">
+          <label for="cvc" class="cvc__label">cvc</label>
+          <div class="cvc__input">
+            <input type="text" name="cvc" class="text-input medium" placeholder="e.g. 123">
+          </div>
+        </div>
+      </div>
 
       <button type="submit" class="confirm-btn">Confirm</button>
     </form>
